@@ -1,0 +1,40 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file                  @controllers.Assets.versioned(path="/public", file: Asset)
+
+# Home page
+GET        /                              @controllers.Application.index()
+GET        /gallery                       @controllers.Application.gallery()
+GET        /contact                       @controllers.Application.contact()
+
+#Plocasti materijali
+
+GET        /oplemenjeniiveral             @controllers.Application.opliveral()
+GET        /radneploce                    @controllers.Application.radneploce()
+GET        /MDFfarbani                    @controllers.Application.mdffarbani()
+GET        /MDF                           @controllers.Application.mdf()
+GET        /HDFlesonit                    @controllers.Application.hdflesonit()
+GET        /furniraneploce                @controllers.Application.furniraneploce()
+GET        /ivericasirova                 @controllers.Application.ivericasirova()
+
+
+#Namjestaj po mjeri
+GET        /kuhinje                       @controllers.Application.kuhinje()
+GET        /plakari                       @controllers.Application.plakari()
+GET        /kancelarijskinamjestaj        @controllers.Application.kannamjestaj()
+GET        /dnevnesobe                    @controllers.Application.dnevnesobe()
+GET        /djecijesobe                   @controllers.Application.djecijesobe()
+GET        /spavacesobe                   @controllers.Application.spavacesobe()
+GET        /predsoblja                    @controllers.Application.predsoblja()
+GET        /kupatila                      @controllers.Application.kupatila()
+
+#Email
+
+POST       /email                           @controllers.Emails.sendMail()
+
+

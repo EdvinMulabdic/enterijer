@@ -1,0 +1,117 @@
+@main("Studio Enterijer"){
+
+    <section id="title" class="emerald margin-bottom50 margin-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Kontaktirajte nas</h1>
+                    <p>Ukoliko imate bilo kakvih pitanja, molimo Vas da nas kontaktirate. Hvala! </p>
+                </div>
+            </div>
+        </div>
+    </section><!--/#title-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="float: right">
+                <div id="mail">
+                @if(flash.containsKey("success")){
+                    <div style="margin-bottom: 10px" class="alert-success alert-success" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Success:</span>
+                        @flash.get("success")
+
+                    </div>
+
+                }
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-item-contact">
+                    <div class="margin-bottom30">
+                        <h5 class="icon-map-marker"> Adresa </h5>
+                        <h6>Hamdije Cemerlica, 7 <br>
+                            Sarajevo, Bosnia and Herzegovina
+                        </h6>
+                    </div>
+
+                    <div class="margin-bottom30">
+                        <h5 class="icon-phone"> Telefon</h5>
+                        <h6>+387 (61) 957 000 </h6>
+                    </div>
+
+                    <div>
+                        <h5 class="icon-envelope"> Mail</h5>
+                        <h6>mirza.granulo&#64gmail.com</h6>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8">
+                <h4>Kontakt forma</h4>
+                <div class="status alert alert-success" style="display: none"></div>
+                <form method="post" action="@routes.Emails.sendMail()">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <input name="name" type="text" class="form-control" required="required" placeholder="Ime">
+                            </div>
+                            <div class="form-group">
+                                <input name="lastname" type="text" class="form-control" required="required" placeholder="Prezime">
+                            </div>
+                            <div class="form-group">
+                                <input name="mail" type="text" class="form-control" required="required" placeholder="Email adresa">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg">Posalji poruku</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Poruka" style="resize: vertical"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/.col-sm-8-->
+
+
+        </div>
+
+
+        <section>
+            <div class="row" id="margin50top">
+                <div class="col-md-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script>
+     function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(43.850572, 18.393421),
+          zoom:16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position:{lat: 43.850572, lng: 18.393421} ,
+            map: map,
+            title: 'Studio Enterijer'
+         });
+     }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+
+}
