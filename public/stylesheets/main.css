@@ -1228,9 +1228,9 @@ ul.faq li > div h3 {
 .margin-top10{
     margin-top: 5%;
 }
-html{
-    min-width: 440px;
-}
+/*html{*/
+    /*min-width: 440px;*/
+/*}*/
 @media(max-width: 440px){
     .margin-top10{
         margin-top: 10%;
@@ -1241,5 +1241,19 @@ html{
     }
 }
 .margin-top{
-    margin-top: 36px;
+    margin-top: 40px;
+}
+
+@media(max-width: 994px){
+    .margin-top{
+        margin-top: 128px;
+    }
+    .margin-top10{
+        margin-top: 150px;
+    }
+}
+@media(max-width: 768px){
+    .margin-top{
+        margin-top: 50px;
+    }
 }
