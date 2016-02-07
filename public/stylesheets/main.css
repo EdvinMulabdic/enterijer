@@ -1228,6 +1228,10 @@ ul.faq li > div h3 {
 .margin-top10{
     margin-top: 5%;
 }
+.radneploce{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
 /*html{*/
     /*min-width: 440px;*/
 /*}*/
@@ -1243,17 +1247,33 @@ ul.faq li > div h3 {
 .margin-top{
     margin-top: 40px;
 }
+.margin-top70{
+    margin-top: 70px;
+}
+.margin-top20{
+    margin-top: 20px;
+}
 
-@media(max-width: 994px){
+@media(max-width: 991px){
     .margin-top{
         margin-top: 128px;
     }
     .margin-top10{
         margin-top: 150px;
     }
+    .radneploce{
+        margin-top: 150px;
+    }
+    .margin-top70{
+        margin-top: 170px;
+    }
 }
 @media(max-width: 768px){
     .margin-top{
         margin-top: 50px;
+    }
+
+    .margin-top70{
+        margin-top: 150px;
     }
 }

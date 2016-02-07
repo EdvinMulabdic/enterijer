@@ -2,7 +2,9 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.*;
+import views.html.contact;
+import views.html.gallery;
+import views.html.index;
 
 public class Application extends Controller {
 
@@ -19,7 +21,10 @@ public class Application extends Controller {
     public Result opliveral(){
         return ok(views.html.plmaterijali.oplemenjeniiveral.render());
     }
+
+
     public Result radneploce(){
+
         return ok(views.html.plmaterijali.radneploce.render());
     }
     public Result mdffarbani(){
