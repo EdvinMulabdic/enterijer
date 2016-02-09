@@ -5,6 +5,7 @@ import play.mvc.Result;
 import views.html.contact;
 import views.html.gallery;
 import views.html.index;
+import views.html.okov;
 
 public class Application extends Controller {
 
@@ -65,6 +66,10 @@ public class Application extends Controller {
     }
     public Result kupatila(){
         return ok(views.html.nampomjeri.kupatila.render());
+    }
+
+    public Result okov(){
+        return ok (okov.render());
     }
 
 }
