@@ -1,0 +1,114 @@
+@main("Studio Enterijer"){
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 margin-top10">
+          <h3>Rasvjeta</h3>
+          <p>
+            Rasvjeta kao veoma bitan faktot svakog doma... Ugrađujemo sve vrste rasvjete na već postojeće izvore struje kao i na nove izvore. Vrstu rasvjete ugrađujemo po mogućnostima kupca ali sa nasim idejama i riješenjima.
+          </p>
+        </div>
+        <div class="col-md-8 col-md-offset-1 margin-top10" >
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row" id="easyPaginate" >
+                <div class="picture">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item-gallery">
+                      <div class="item-inner">
+                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta.jpg")' alt="" style="height: 200px">
+                        <div class="overlay">
+                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="picture">
+                  <div class="col-md-4 col-xs-12" >
+                    <div class="portfolio-item-gallery">
+                      <div class="item-inner">
+                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta1.jpg")' alt="" style="height: 200px">
+                        <div class="overlay">
+                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta1.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="picture">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item-gallery">
+                      <div class="item-inner">
+                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta2.jpg")' alt="" style="height: 200px">
+                        <div class="overlay">
+                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta2.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="picture">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item-gallery">
+                      <div class="item-inner">
+                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta3.jpg")' alt="" style="height: 200px">
+                        <div class="overlay">
+                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta3.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="picture">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item-gallery">
+                      <div class="item-inner">
+                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta4.jpg")' alt="" style="height: 200px">
+                        <div class="overlay">
+                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta4.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!--/.item-->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('#easyPaginate').easyPaginate({
+        paginateElement: '.picture',
+        elementsPerPage: 6,
+        effect:'climb'
+        });
+</script>
+  <style>
+  .easyPaginateNav a {
+  font-family: "Lucida Sans","Lucida Grande",sans-serif;
+  padding:9px;
+  color: #204d74;
+
+
+  }
+
+  .easyPaginateNav a.current {
+  font-weight:bold;
+  text-decoration:underline;
+  }
+
+  .easyPaginateNav a:hover {
+  background-color: #DEDEDE;
+  color: #000;
+
+  }
+  </style>
+}

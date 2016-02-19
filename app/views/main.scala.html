@@ -35,9 +35,9 @@
 
 
 
-        <script src='@routes.Assets.versioned("javascripts/jQuerry.easyPaginate.js")'></script>
         <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/font-awesome.min.css")'>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src='@routes.Assets.versioned("javascripts/jQuerry.easyPaginate.js")'></script>
 
 
         <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
 
 
     <header class="head-section navbar navbar-inverse navbar-fixed-top wet-asphalt">
-        <div class="container">
+        @*<div class="container">*@
             <div class="row">
                 <div class="col-md-3">
                     <div class="navbar-header">
@@ -93,6 +93,18 @@
                                 </ul>
                             </li>
 
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dekoracije enterijera <i class="icon-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@routes.Application.rigips()">Rigips</a></li>
+                                    <li><a href="@routes.Application.tapete()">Tapete</a></li>
+                                    <li><a href="@routes.Application.dekorativnizid()">Dekorativni zidovi</a></li>
+                                    <li><a href="@routes.Application.dekorativnikamen()">Dekorativni kamen</a></li>
+                                    <li><a href="@routes.Application.podneobloge()">Podne obloge</a></li>
+                                    <li><a href="@routes.Application.rasvjeta()">Rasvjeta</a></li>
+                                </ul>
+                            </li>
+
                             <li><a href="@routes.Application.okov()">Okov</a></li>
                             <li><a href="@routes.Application.gallery()">Galerija</a></li>
                             <li><a href="@routes.Application.contact()">Kontakt</a></li>
@@ -100,7 +112,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        @*</div>*@
     </header><!--/header-->
 
 
@@ -116,7 +128,7 @@
 
                     <div class="col-md-3">
                         <h4>O nama</h4>
-                        <a href="#">Saznajte više o nama</a>
+                        <a href="@routes.Application.onama()">Saznajte više o nama</a>
                     </div><!--/.col-md-3-->
 
                     <div class="col-md-3">
@@ -150,7 +162,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p> &copy; 2015 . All Rights Reserved.</p>
+                    <p> &copy; 2016 . DT Project</p>
                 </div>
             </div>
         </div>
