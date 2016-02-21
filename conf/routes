@@ -20,7 +20,7 @@ GET         /MDFfarbani                    @controllers.Application.mdffarbani()
 GET         /MDF                           @controllers.Application.mdf()
 GET         /HDFlesonit                    @controllers.Application.hdflesonit()
 GET         /furniraneploce                @controllers.Application.furniraneploce()
-GET         /ivericasirova                 @controllers.Application.ivericasirova()
+GET         /kerok                         @controllers.Application.kerok()
 
 
 #Namjestaj po mjeri

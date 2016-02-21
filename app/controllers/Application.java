@@ -45,8 +45,8 @@ public class Application extends Controller {
         return ok(views.html.plmaterijali.furniraneploce.render());
     }
 
-    public Result ivericasirova() {
-        return ok(views.html.plmaterijali.ivericasirova.render());
+    public Result kerok() {
+        return ok(views.html.plmaterijali.kerok.render());
     }
 
     public Result kuhinje() {
