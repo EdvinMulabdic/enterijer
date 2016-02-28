@@ -866,7 +866,7 @@ ul.tag-cloud li {
     border-radius: 4px;
     font-size: 20px;
     font-family: "Lucida Sans", "Lucida Grande", sans-serif;
-    color: #bdc3c7;
+    color: white;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -1104,10 +1104,10 @@ ul.rss li::before {
 #footer {
     padding-top: 30px;
     padding-bottom: 30px;
-    color: #bdc3c7;
+    color: white;
 }
 #footer a {
-    color: #bdc3c7;
+    color: white;
 }
 #footer a:hover {
     color: #d9534f;

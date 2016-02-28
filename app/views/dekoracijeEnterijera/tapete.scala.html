@@ -1,93 +1,48 @@
+@import model.Image
 @main("Studio Enterijer"){
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 margin-top10">
-          <h3>Tapete</h3>
-          <p>
-            Bavimo se postavljanjem svih vrsta tapeta. Bilo da su uklapajuce, neuklapajuce, foto-tapeta...  Ovo je ujedno i najbrzi nacin da svom domu dodate dašak luksuza i originalnosti.
-          </p>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 margin-top10">
+                    <h3>Tapete</h3>
+                    <p>
+                        Bavimo se postavljanjem svih vrsta tapeta. Bilo da su uklapajuce, neuklapajuce, foto-tapeta...  Ovo je ujedno i najbrzi nacin da svom domu dodate dašak luksuza i originalnosti.
+                    </p>
+                </div>
+                <div class="col-md-8 col-md-offset-1 margin-top10" >
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row" id="easyPaginate" >
+                            @for(image <- Image.tapete()) {
+                                <div class="picture">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@image' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@image' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            </div>
+                        </div><!--/.item-->
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-md-8 col-md-offset-1 margin-top10" >
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="row" id="easyPaginate" >
-                <div class="picture">
-                  <div class="col-md-6 col-xs-12">
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@routes.Assets.versioned("images/tapeta/tapeta1.jpg")' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/tapeta/tapeta1.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="picture">
-                  <div class="col-md-6 col-xs-12" >
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@routes.Assets.versioned("images/tapeta/tapeta2.jpg")' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/tapeta/tapeta2.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="picture">
-                  <div class="col-md-6 col-xs-12">
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@routes.Assets.versioned("images/tapeta/tapeta3.jpg")' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/tapeta/tapeta3.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="picture">
-                  <div class="col-md-6 col-xs-12">
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@routes.Assets.versioned("images/tapeta/tapeta4.JPG")' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/tapeta/tapeta4.JPG")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="picture">
-                  <div class="col-md-4 col-xs-12">
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@routes.Assets.versioned("images/rasvjeta/rasvjeta4.jpg")' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/rasvjeta/rasvjeta4.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!--/.item-->
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <script>
+    <script>
     $('#easyPaginate').easyPaginate({
         paginateElement: '.picture',
-        elementsPerPage: 6,
+        elementsPerPage: 4,
         effect:'climb'
         });
 </script>

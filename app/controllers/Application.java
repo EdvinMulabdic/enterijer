@@ -54,6 +54,7 @@ public class Application extends Controller {
     }
 
     public Result plakari() {
+
         return ok(views.html.nampomjeri.plakari.render());
     }
 
