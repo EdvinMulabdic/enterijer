@@ -26,8 +26,8 @@ public class Emails extends Controller {
             email.setSmtpPort(Integer.parseInt(ConfigProvider.SMTP_PORT));
             try {
                 /*Configuring mail*/
+                email.setAuthentication(ConfigProvider.MAIL_FROM, ConfigProvider.MAIL_FROM_PASS);
                 email.setFrom(ConfigProvider.MAIL_FROM);
-                email.setAuthentication(ConfigProvider.MAIL_FROM_PASS, ConfigProvider.SMTP_PASS);
                 email.setStartTLSEnabled(true);
                 email.setDebug(true);
                 email.addTo(ConfigProvider.SMTP_USER);

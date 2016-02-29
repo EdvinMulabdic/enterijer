@@ -1,6 +1,8 @@
 package model;
 
 import com.avaje.ebean.Model;
+import com.cloudinary.Cloudinary;
+import play.Logger;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -11,20 +13,39 @@ import java.util.List;
  */
 public class Image extends Model {
 
+    public static Cloudinary cloudinary;
+
+
+
+
     public static List<String> amplakari() {
         List<String> results = new ArrayList<>();
+//
+//        String location = "E:/enterijer/public/images/amplakari";
+//
+//        File[] files = new File(location).listFiles();
+//
+//        if (files != null) {
+//            for (File file : files) {
+//                if (file.isFile()) {
+//                    results.add("/assets/images/amplakari" + "/" + file.getName());
+//                }
+//            }
+//        }
+//        return results;
+//        String url;
+//
+//        url = cloudinary.url().format("jpg")
+//                .transformation(new Transformation().);
 
-        String location = "E:/enterijer/public/images/amplakari";
+        Cloudinary cloudinary = new Cloudinary("cloudinary://681544417177931:6I3d8y8tFPYSEdorGrnQV1-GdfY@enterijer");
 
-        File[] files = new File(location).listFiles();
 
-        if (files != null) {
-            for (File file : files) {
-                if (file.isFile()) {
-                    results.add("/assets/images/amplakari" + "/" + file.getName());
-                }
-            }
-        }
+
+        Logger.info("Resuzutauta  " + results);
+//        results.add(cloudinary.url().type("fetch").imageTag("amplakari"));
+//        Logger.info("CLOUGd" + cloudinary.url().type("fetch").imageTag("amplakari"));
+
         return results;
     }
     public static List<String> kuhinje() {

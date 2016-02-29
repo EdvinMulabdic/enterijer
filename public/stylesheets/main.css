@@ -31,6 +31,7 @@
 }
 #image10{
     background-image: url('../images/slider/bg10.jpg');
+    /*background-image: url('https://res.cloudinary.com/enterijer/image/upload/v1456677536/sample.jpg');*/
 }
 #image11{
     background-image: url('../images/slider/bg11.jpg');
