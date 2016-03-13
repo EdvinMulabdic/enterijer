@@ -4,7 +4,7 @@
  * Version 1.0
  *
  * Licensed under GPL <http://en.wikipedia.org/wiki/GNU_General_Public_License>
- * Copyright (c) 2008, Stéphane Litou <contact@mushtitude.com>
+ * Copyright (c) 2008, Stï¿½phane Litou <contact@mushtitude.com>
  * All rights reserved.
  *
  This program is free software: you can redistribute it and/or modify

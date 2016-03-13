@@ -1,4 +1,4 @@
-@import model.Image
+
 @main("Studio Enterijer"){
     <section>
         <div class="container">
@@ -14,61 +14,103 @@
                     </p>
 
                 </div>
-                <div class="col-md-8 col-md-offset-1 margin-top10" >
+                <div class="col-md-8 col-md-offset-1 margin-top10">
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row" id="easyPaginate" >
-                            @for(image <- Image.kupaonickinamjestaj()) {
+
                                 <div class="picture">
                                     <div class="col-md-4 col-xs-12">
                                         <div class="portfolio-item-gallery">
                                             <div class="item-inner">
-                                                <img class="img-responsive" src='@image' alt="" style="height: 200px">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0646.jpg")' alt="" style="height: 200px">
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" href='@image' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0646.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            }
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0647.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0647.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0649.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMAG0649.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081800.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081800.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081811.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081811.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081821.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081821.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081835.jpg")' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='@routes.Assets.versioned("images/kupaonickinamjestaj/IMG_20151127_081835.jpg")' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
-                        </div><!--/.item-->
-
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-
-    <script>
-    $('#easyPaginate').easyPaginate({
-        paginateElement: '.picture',
-        elementsPerPage: 6,
-        effect:'climb'
-        });
-</script>
-  <style>
-  .easyPaginateNav a {
-  font-family: "Lucida Sans","Lucida Grande",sans-serif;
-  padding:9px;
-  color: #204d74;
-
-
-  }
-
-  .easyPaginateNav a.current {
-  font-weight:bold;
-  text-decoration:underline;
-  }
-
-  .easyPaginateNav a:hover {
-  background-color: #DEDEDE;
-  color: #000;
-
-  }
-  </style>
 }

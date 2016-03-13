@@ -2,7 +2,6 @@ package model;
 
 import com.avaje.ebean.Model;
 import com.cloudinary.Cloudinary;
-import play.Logger;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -33,18 +32,8 @@ public class Image extends Model {
 //            }
 //        }
 //        return results;
-//        String url;
-//
-//        url = cloudinary.url().format("jpg")
-//                .transformation(new Transformation().);
 
         Cloudinary cloudinary = new Cloudinary("cloudinary://681544417177931:6I3d8y8tFPYSEdorGrnQV1-GdfY@enterijer");
-
-
-
-        Logger.info("Resuzutauta  " + results);
-//        results.add(cloudinary.url().type("fetch").imageTag("amplakari"));
-//        Logger.info("CLOUGd" + cloudinary.url().type("fetch").imageTag("amplakari"));
 
         return results;
     }
