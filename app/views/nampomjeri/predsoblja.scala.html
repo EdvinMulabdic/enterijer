@@ -1,68 +1,211 @@
-@import model.Image
 @main("Studio Enterijer"){
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 margin-top10">
-          <h3>Predsoblje</h3>
-          <p>
-            Predsoblje je prostorija sa kojom se Vi i Vaši gosti prvo susrećete. Zato je izuzetno bitno da bude funkcionalno i lijepo. Cipelarnici, čiviluci i klupe za sjedenje su samo neki od komada namještaja koji Vam u mnogome mogu olakšati svakodnevnicu. U poređenju sa drugim nameštajem u stanu, oni su  često neopravdano zanemareni, iako su veoma značajani u svakom domu  za opštu higijenu i urednost.
-          </p>
-        </div>
-        <div class="col-md-8 col-md-offset-1 margin-top10" >
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="row" id="easyPaginate" >
-              @for(image <- Image.predsoblje()) {
-                <div class="picture">
-                  <div class="col-md-4 col-xs-12">
-                    <div class="portfolio-item-gallery">
-                      <div class="item-inner">
-                        <img class="img-responsive" src='@image' alt="" style="height: 200px">
-                        <div class="overlay">
-                          <a class="preview btn btn-danger" href='@image' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 margin-top10">
+                    <h3>Predsoblje</h3>
+                    <p>
+                        Predsoblje je prostorija sa kojom se Vi i Vaši gosti prvo susrećete. Zato je izuzetno bitno da bude funkcionalno i lijepo. Cipelarnici, čiviluci i klupe za sjedenje su samo neki od komada namještaja koji Vam u mnogome mogu olakšati svakodnevnicu. U poređenju sa drugim nameštajem u stanu, oni su  često neopravdano zanemareni, iako su veoma značajani u svakom domu  za opštu higijenu i urednost.
+                    </p>
                 </div>
-              }
-              </div>
-            </div><!--/.item-->
+                <div class="col-md-8 col-md-offset-1 margin-top10" >
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row" id="easyPaginate" >
 
-          </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950260/predsoblje/IMG_20160107_175316.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950260/predsoblje/IMG_20160107_175316.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950263/predsoblje/IMG_20160107_175331.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950263/predsoblje/IMG_20160107_175331.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950233/predsoblje/IMG_20160107_175307.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950233/predsoblje/IMG_20160107_175307.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950244/predsoblje/IMG_20151127_081425.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950244/predsoblje/IMG_20151127_081425.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950239/predsoblje/IMG_20151127_081420.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950239/predsoblje/IMG_20151127_081420.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950229/predsoblje/IMG_20151127_081357.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950229/predsoblje/IMG_20151127_081357.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950226/predsoblje/IMG_20151127_081343.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950226/predsoblje/IMG_20151127_081343.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950177/predsoblje/IMAG0654.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950177/predsoblje/IMAG0654.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950181/predsoblje/IMAG0653.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950181/predsoblje/IMAG0653.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950178/predsoblje/IMAG0651.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950178/predsoblje/IMAG0651.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950167/predsoblje/12592781_515353115313290_8881984733314233770_n.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950167/predsoblje/12592781_515353115313290_8881984733314233770_n.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950168/predsoblje/12509470_515353095313292_8224758673670165867_n.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950168/predsoblje/12509470_515353095313292_8224758673670165867_n.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="picture">
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="portfolio-item-gallery">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1457950261/predsoblje/2014-12-12_18.35.14.jpg' alt="" style="height: 200px">
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1457950261/predsoblje/2014-12-12_18.35.14.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div><!--/.item-->
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <script>
+    <script>
     $('#easyPaginate').easyPaginate({
         paginateElement: '.picture',
         elementsPerPage: 6,
         effect:'climb'
         });
 </script>
-  <style>
-  .easyPaginateNav a {
-  font-family: "Lucida Sans","Lucida Grande",sans-serif;
-  padding:9px;
-  color: #204d74;
+    <style>
+    .easyPaginateNav a {
+    font-family: "Lucida Sans","Lucida Grande",sans-serif;
+    padding:9px;
+    color: #204d74;
 
 
-  }
+    }
 
-  .easyPaginateNav a.current {
-  font-weight:bold;
-  text-decoration:underline;
-  }
+    .easyPaginateNav a.current {
+    font-weight:bold;
+    text-decoration:underline;
+    }
 
-  .easyPaginateNav a:hover {
-  background-color: #DEDEDE;
-  color: #000;
+    .easyPaginateNav a:hover {
+    background-color: #DEDEDE;
+    color: #000;
 
-  }
-  </style>
+    }
+    </style>
 }
