@@ -222,6 +222,4 @@
             }
         });
     };
-})(jQuery);/**
- * Created by User on 12/16/2015.
- */
+})(jQuery);

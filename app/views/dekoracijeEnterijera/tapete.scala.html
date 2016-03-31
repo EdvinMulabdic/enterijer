@@ -138,38 +138,35 @@
                         </div><!--/.item-->
 
                     </div>
-
+                    <div style="text-align: center" id='page_navigation' class="pagination-custom"></div>
                 </div>
             </div>
         </div>
     </section>
+    <input type='hidden' id='current_page' />
+    <input type='hidden' id='show_per_page' />
+
+    <script src='@routes.Assets.versioned("javascripts/paginacija4.js")'></script>
 
 
-    <script>
-    $('#easyPaginate').easyPaginate({
-        paginateElement: '.picture',
-        elementsPerPage: 4,
-        effect:'climb'
-        });
-</script>
-  <style>
-  .easyPaginateNav a {
-  font-family: "Lucida Sans","Lucida Grande",sans-serif;
-  padding:9px;
-  color: #204d74;
+    <style>
+    .pagination-custom a {
+    font-family: "Lucida Sans","Lucida Grande",sans-serif;
+    padding:9px;
+    color: #204d74;
 
 
-  }
+    }
 
-  .easyPaginateNav a.current {
-  font-weight:bold;
-  text-decoration:underline;
-  }
+    .pagination-custom a.current {
+    font-weight:bold;
+    text-decoration:underline;
+    }
 
-  .easyPaginateNav a:hover {
-  background-color: #DEDEDE;
-  color: #000;
+    .pagination-custom a:hover {
+    background-color: #DEDEDE;
+    color: #000;
 
-  }
-  </style>
+    }
+    </style>
 }

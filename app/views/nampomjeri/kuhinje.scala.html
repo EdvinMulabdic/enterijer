@@ -13,7 +13,7 @@
                         <div class="item active">
                             <div class="row" id="easyPaginate" >
 
-                                <div class="picture">
+                                <div class="picture" >
                                     <div class="col-md-4 col-xs-12">
                                         <div class="portfolio-item-gallery">
                                             <div class="item-inner">
@@ -118,18 +118,6 @@
                                                 <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1456680785/kuhinje/IMAG0153.jpg' alt="" style="height: 200px">
                                                 <div class="overlay">
                                                     <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1456680785/kuhinje/IMAG0153.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="picture">
-                                    <div class="col-md-4 col-xs-12">
-                                        <div class="portfolio-item-gallery">
-                                            <div class="item-inner">
-                                                <img class="img-responsive" src='' alt="" style="height: 200px">
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-danger" href='' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -631,18 +619,6 @@
                                     <div class="col-md-4 col-xs-12">
                                         <div class="portfolio-item-gallery">
                                             <div class="item-inner">
-                                                <img class="img-responsive" src='' alt="" style="height: 200px">
-                                                <div class="overlay">
-                                                    <a class="preview btn btn-danger" href='' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="picture">
-                                    <div class="col-md-4 col-xs-12">
-                                        <div class="portfolio-item-gallery">
-                                            <div class="item-inner">
                                                 <img class="img-responsive" src='http://res.cloudinary.com/enterijer/image/upload/v1456681261/kuhinje/IMG_20151127_081620.jpg' alt="" style="height: 200px">
                                                 <div class="overlay">
                                                     <a class="preview btn btn-danger" href='http://res.cloudinary.com/enterijer/image/upload/v1456681261/kuhinje/IMG_20151127_081620.jpg' rel="prettyPhoto"><i class="icon-eye-open"></i></a>
@@ -976,45 +952,41 @@
                                     </div>
                                 </div>
 
-
-
                             </div>
                         </div><!--/.item-->
 
-                    </div>
+                     </div>
+                    <div style="text-align: center" id='page_navigation' class="pagination-custom"></div>
 
                 </div>
             </div>
         </div>
     </section>
+    <input type='hidden' id='current_page' />
+    <input type='hidden' id='show_per_page' />
 
 
-    <script>
-    $('#easyPaginate').easyPaginate({
-        paginateElement: '.picture',
-        elementsPerPage: 6,
-        effect:'climb'
-        });
-</script>
+    <script src='@routes.Assets.versioned("javascripts/paginacija.js")'></script>
+
     <style>
-    .easyPaginateNav a {
-    font-family: "Lucida Sans","Lucida Grande",sans-serif;
-    padding:9px;
-        color: #204d74;
+   .pagination-custom a {
+   font-family: "Lucida Sans","Lucida Grande",sans-serif;
+   padding:9px;
+     color: #204d74;
 
 
-    }
+   }
 
-    .easyPaginateNav a.current {
-    font-weight:bold;
-    text-decoration:underline;
-    }
+   .pagination-custom a.current {
+   font-weight:bold;
+   text-decoration:underline;
+   }
 
-    .easyPaginateNav a:hover {
-    background-color: #DEDEDE;
-    color: #000;
+   .pagination-custom a:hover {
+   background-color: #DEDEDE;
+   color: #000;
 
-    }
-    </style>
+   }
+   </style>
 
 }

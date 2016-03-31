@@ -2,46 +2,7 @@
 .clearfix {
     *zoom: 1;
 }
-#image1{
-    background-image: url('../images/slider/bg1.jpg');
-}
-#image2{
-    background-image: url('../images/slider/bg2.jpg');
-}
-#image3{
-    background-image: url('../images/slider/bg3.jpg');
-}
-#image4{
-    background-image: url('../images/slider/bg4.jpg');
-}
-#image5{
-    background-image: url('../images/slider/bg5.jpg');
-}
-#image6{
-    background-image: url('../images/slider/bg6.jpg');
-}
-#image7{
-    background-image: url('../images/slider/bg7.jpg');
-}
-#image8{
-    background-image: url('../images/slider/bg8.jpg');
-}
-#image9{
-    background-image: url('../images/slider/bg9.jpg');
-}
-#image10{
-    background-image: url('../images/slider/bg10.jpg');
-    /*background-image: url('https://res.cloudinary.com/enterijer/image/upload/v1456677536/sample.jpg');*/
-}
-#image11{
-    background-image: url('../images/slider/bg11.jpg');
-}
-#image12{
-    background-image: url('../images/slider/bg12.jpg');
-}
-#image13{
-    background-image: url('../images/slider/bg13.JPG');
-}
+
 .easyPaginateNav{
     font-size: 36px;
 
@@ -419,7 +380,7 @@ a:focus {
     position: absolute;
     width: 100%;
     display: block !important;
-    height: 620px;
+    /*height: 620px;*/
     -webkit-transition: opacity ease-in-out 500ms;
     -moz-transition: opacity ease-in-out 500ms;
     -o-transition: opacity ease-in-out 500ms;
@@ -1554,5 +1515,10 @@ span.nav-close:before {
 @media screen and (max-width:24em) {
     .grid li {
         width: 100%;
+    }
+}
+@media (max-width: 370px) {
+    .carousel-inner {
+        margin-top: 100px;
     }
 }
